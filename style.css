@@ -107,6 +107,11 @@ label{
     color: aliceblue;
 }
 
+input {
+    all: unset;
+  }
+
+
 input{
     width: 250px;
     height: 30px;
@@ -120,23 +125,24 @@ input{
 
 }
 
+
 input:hover{
-    border-bottom: 1px solid #232631;
-    box-shadow: 0 0 0 0 #fff inset, #278062 0 0 0 2px;
+    border-bottom: 2px solid rgb(24, 5, 44);
+    
 
 }
 input:focus{
     background: #232631;
     outline: 0;
-    box-shadow: 0 0 0 0 #fff inset, #278062 0 0 0 2px;
-    border-bottom: 1px solid #232631;
+    border-bottom: 2px solid rgb(24, 5, 44);
+    
 }
 
 input:valid{
-    background: #232631;
-    outline: 0;
-    box-shadow: 0 0 0 0 #fff inset, #278062 0 0 0 2px;
-    border-bottom: 1px solid #232631;
+    background: #232631 !important;
+    outline: 0 !important;
+    border-bottom: 2px solid #278062 !important;
+   
 }
 
 
@@ -159,9 +165,21 @@ button{
     color: aliceblue;
     font-family: inter;
     border: 1px solid #278062;
-
-
 }
+
+#error-text{
+    position: relative;
+    width: 150px;
+   
+    display: flex;
+    justify-content: center;
+    top: 5px;
+    background-color: #d4372c;
+   
+    font-size: 15px;
+   
+}
+
 
 
 

@@ -22,25 +22,25 @@
                 <div class="name-info">
                     <label for="firstName">
                         
-                        <input class="form__field" type="text" name="first-name" id="firstName" placeholder="FIRST NAME" required>
+                        <input class="form__field" type="text" name="first-name" id="firstName" placeholder="FIRST NAME" required autocomplete="off">
                         
     
                     </label>
                     <label for="lastName">
                        
-                        <input  class="form__field" type="text" name="last-name" id="lastName" placeholder="LAST NAME" required>
+                        <input  class="form__field" type="text" name="last-name" id="lastName" placeholder="LAST NAME" required autocomplete="off">
                         
     
                     </label>
                 </div>
                 <div class="contact-info">
                     <label for="email">
-                        <input class="form__field" type="email" name="user-email" id="email" placeholder="E-MAIL" required>
+                        <input class="form__field" type="email" name="user-email" id="email" placeholder="E-MAIL" required autocomplete="off">
                         
     
                     </label>
                     <label for="phone-number">
-                        <input class="form__field" type="text" name="user-phonenumber" id="phone-number" placeholder="PHONE NUMBER" required>
+                        <input class="form__field" type="text" name="user-phonenumber" id="phone-number" placeholder="PHONE NUMBER" required autocomplete="off">
                        
     
                     </label>
@@ -48,19 +48,21 @@
                 </div>
                 <div class="password">
                     <label for="password">
-                        <input class="form__field"  class="error" type="password" name="user-password" id="password" placeholder="PASSWORD" required>
+                        <input  class="form__field"  class="error" type="password" name="user-password" id="password" placeholder="PASSWORD" required minlength="8" maxlength="20" autocomplete="off">
                         
     
                     </label>
-                    <label for="confirm-password">
-                        <input class="form__field" class="error" type="password" name="user-confirmPassword" id="confirm-password" placeholder="CONFIRM PASSWORD" required>
+                    <label class="" for="confirm-password">
+                        <input class="form__field" class="error" type="password" name="user-confirmPassword" id="confirm-password" placeholder="CONFIRM PASSWORD" required  minlength="8" maxlength="20" autocomplete="off">
+                        <p id="error-text"></p>
+                        
                         
     
                     </label>
                 </div>
 
                 <div class="submit-sec">
-                    <button type="submit">Create Account</button>
+                    <button id="submit-btn" type="submit">Create Account</button>
                     <p>Already have an account? <span id="log-in">Log In</span></p>
                 </div>
                
@@ -72,5 +74,6 @@
 
  
     
+    <script src="./script.js"></script>
 </body>
 </html>
